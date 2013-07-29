@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<sdf version="1.3">
+  <model name="ftc_arena_2013">
+    <static>true</static>
+    <link name="link">
+      <pose>0 0 0 1.570796 0 0</pose>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://ftc_arena_2013/meshes/arena.stl</uri>
+            <scale>.0254 .0254 .0254</scale>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://ftc_arena_2013/meshes/arena.stl</uri>
+            <scale>.0254 .0254 .0254</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>.25 .75 .5 1</ambient>
+          <diffuse>.25 .75 .5 1</diffuse>
+          <specular>.25 .75 .5 1</specular>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

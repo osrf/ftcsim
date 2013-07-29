@@ -1,0 +1,8 @@
+add_subdirectory(ftc_blue_ring)
+add_subdirectory(frc_arena_2013)
+add_subdirectory(ftc_frisbee)
+add_subdirectory(ftc_arena_2013)
+add_subdirectory(ftc_robot)
+add_subdirectory(ftc_robot2)
+add_subdirectory(ftc_red_ring)
+add_subdirectory(ftc_tower)

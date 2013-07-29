@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<sdf version="1.4">
+  <model name="frc_arena_2013">
+    <static>true</static>
+    <link name="link">
+      <pose>0 0 0 1.570796 0 0</pose>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://frc_arena_2013/meshes/collision.stl</uri>
+            <scale>.0254 .0254 .0254</scale>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://frc_arena_2013/meshes/visual.stl</uri>
+            <scale>.0254 .0254 .0254</scale>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

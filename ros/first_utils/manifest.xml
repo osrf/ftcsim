@@ -1,0 +1,10 @@
+<package>
+  <description brief="vrc_finals">
+    FIRST simulation launch files and scripts 
+  </description>
+  <author>Justin Manzo</author>
+  <author>Nate Koenig</author>
+
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+</package>
