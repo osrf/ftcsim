@@ -25,6 +25,13 @@ if (PKG_CONFIG_FOUND)
   pkg_check_modules(GAZEBO gazebo)
 endif()
 
+# rosversion can appear in /usr/bin and will return a valid result even if the
+# user hasn't sourced a ROS setup.sh.  So we'll further check that ROS_ROOT is
+# set and bail if not.
+if("$ENV{ROS_ROOT}" STREQUAL "")
+  message(FATAL_ERROR "ROS_ROOT is not set. Did you source a ROS setup file (e.g., /opt/ros/fuerte/setup.sh)?")
+endif()
+
 # add_subdirectory(media)
 add_subdirectory(worlds)
 add_subdirectory(models)
