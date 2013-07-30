@@ -22,7 +22,7 @@ include (ExternalProject)
 
 include (FindPkgConfig)
 if (PKG_CONFIG_FOUND)
-  pkg_check_modules(GAZEBO gazebo)
+  pkg_check_modules(GAZEBO REQUIRED gazebo)
 endif()
 
 # add_subdirectory(media)
