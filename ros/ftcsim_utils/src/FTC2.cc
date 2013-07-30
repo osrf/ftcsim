@@ -90,9 +90,9 @@ void FTC2::JoystickCB(const sensor_msgs::Joy::ConstPtr &_msg)
 
   this->lift = _msg->axes[5]*-5+5;
 
-  if (_msg->buttons[2]==true)
+  if (_msg->buttons[2] == true)
     this->height = 0.5 - 0.3556;
-  else if (_msg->buttons[0]==true)
+  else if (_msg->buttons[0] == true)
     this->height = 0.5 + 0.34;
   else
     this->height = 0.5;
