@@ -1,7 +1,7 @@
 ﻿<?xml version='1.0'?>
 <sdf version='1.4'>
   <model name='ftc_robot'>
-    <link name='Chassis'>
+    <link name='chassis'>
       <pose>0 0 .05 1.570796 0 0</pose>
       <collision name='collision'>
         <geometry>
@@ -45,7 +45,7 @@
       </velocity_decay>
     </link>
 
-    <link name='Lift'>
+    <link name='lift'>
       <pose>.06 0 .2 0.000000 1.570796 3.926990</pose>
       <collision name='collision'>
         <geometry>
@@ -82,7 +82,7 @@
       </inertial>
       <kinematic>0</kinematic>
       <gravity>1</gravity>
-      <sensor name="Webcam" type="camera">
+      <sensor name="webcam" type="camera">
         <pose>-.1 -.1 -.08 -1.57 -1.57 0</pose>
         <camera>
           <horizontal_fov>1.047</horizontal_fov>
@@ -97,14 +97,14 @@
           </clip>
         </camera>
         <update_rate>30</update_rate>
-        <topic>Webcam</topic>
+        <topic>webcam</topic>
         <always_on>true</always_on>
         <visualize>false</visualize>
-        <plugin name="CameraPlugin" filename="/home/simstation/ROS/Packages/Camera/lib/libCameraPlugin.so"/>
+        <plugin name="camera_plugin" filename="libFTCCameraPlugin.so"/>
       </sensor>
     </link>
 
-    <link name='Claw'>
+    <link name='claw'>
       <pose>.05 .05 .25 1.570796 0.000000 0.785398</pose>
       <collision name='collision'>
         <geometry>
@@ -144,7 +144,7 @@
       <gravity>1</gravity>
     </link>
 
-    <link name='Wheel_1'>
+    <link name='wheel_1'>
       <pose>.225 .185 .05 0.000000 0.000000 1.570796</pose>
       <self_collide>false</self_collide>
       <collision name='collision'>
@@ -187,7 +187,7 @@
       <gravity>1</gravity>
     </link>
 
-    <link name='Wheel_2'>
+    <link name='wheel_2'>
       <pose>-.225 .185 .05 0.000000 0.000000 1.570796</pose>
       <self_collide>false</self_collide>
       <collision name='collision'>
@@ -230,7 +230,7 @@
       <gravity>1</gravity>
     </link>
 
-    <link name='Wheel_3'>
+    <link name='wheel_3'>
       <pose>0 -.05 .05 0.000000 0.000000 0.000000</pose>
       <self_collide>false</self_collide>
       <collision name='collision'>
@@ -273,7 +273,7 @@
       <gravity>1</gravity>
     </link>
 
-    <link name='Wheel_4'>
+    <link name='wheel_4'>
       <pose>0 .41 0.05 0.000000 0.000000 0.000000</pose>
       <self_collide>false</self_collide>
       <collision name='collision'>
@@ -316,9 +316,9 @@
       <gravity>1</gravity>
     </link>
 
-    <joint name="Lift_joint" type="prismatic">
-      <parent>Chassis</parent>
-      <child>Lift</child>
+    <joint name="lift_joint" type="prismatic">
+      <parent>chassis</parent>
+      <child>lift</child>
       <pose>0 0 0 0 0 0</pose>
       <axis>
         <xyz>0 0 1</xyz>
@@ -329,9 +329,9 @@
       </axis>
     </joint>
 
-    <joint name="Claw_joint" type="revolute">
-      <parent>Lift</parent>
-      <child>Claw</child>
+    <joint name="claw_joint" type="revolute">
+      <parent>lift</parent>
+      <child>claw</child>
       <pose>.055 .13 .04 0 0 0</pose>
       <axis>
         <xyz>.1 .1 0</xyz>
@@ -346,42 +346,44 @@
       </axis>
     </joint>
 
-    <joint name="Wheel_1_joint" type="revolute">
-      <parent>Chassis</parent>
-      <child>Wheel_1</child>
+    <joint name="wheel_1_joint" type="revolute">
+      <parent>chassis</parent>
+      <child>wheel_1</child>
       <pose>0 0 0 0 0 0</pose>
       <axis>
         <xyz>1 0 0</xyz>
       </axis>
     </joint>
 
-    <joint name="Wheel_2_joint" type="revolute">
-      <parent>Chassis</parent>
-      <child>Wheel_2</child>
+    <joint name="wheel_2_joint" type="revolute">
+      <parent>chassis</parent>
+      <child>wheel_2</child>
       <pose>0 0 0 0 0 0</pose>
       <axis>
         <xyz>1 0 0</xyz>
       </axis>
     </joint>
 
-    <joint name="Wheel_3_joint" type="revolute">
-      <parent>Chassis</parent>
-      <child>Wheel_3</child>
+    <joint name="wheel_3_joint" type="revolute">
+      <parent>chassis</parent>
+      <child>wheel_3</child>
       <pose>0 0 0 0 0 0</pose>
       <axis>
         <xyz>0 1 0</xyz>
       </axis>
     </joint>
 
-    <joint name="Wheel_4_joint" type="revolute">
-      <parent>Chassis</parent>
-      <child>Wheel_4</child>
+    <joint name="wheel_4_joint" type="revolute">
+      <parent>chassis</parent>
+      <child>wheel_4</child>
       <pose>0 0 0 0 0 0</pose>
       <axis>
         <xyz>0 1 0</xyz>
       </axis>
     </joint>
 
-    <plugin name="FTC_drive" filename="/home/simstation/ROS/Packages/FTC/lib/libFTC.so"/>
+    <plugin name="ftc_drive" filename="libFTC.so">
+      <joy_topic>/ftc_robot/joy</joy_topic>
+    </plugin>
   </model>
 </sdf>

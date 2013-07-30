@@ -14,141 +14,141 @@
 
     <!-- The arena -->
     <include>
-      <uri>model://FTC2013</uri>
+      <uri>model://ftc_arena_2013</uri>
     </include>
 
     <!-- Red Rings -->
     <include>
-      <uri>model://red_ring</uri>
+      <uri>model://ftc_red_ring</uri>
       <name>Red_Ring_1</name>
       <pose>2 0 .45 1.57 0 0</pose>
     </include>
     <include>
-      <uri>model://red_ring</uri>
+      <uri>model://ftc_red_ring</uri>
       <name>Red_Ring_2</name>
       <pose>2 .035 .45 1.57 0 0</pose>
     </include>
     <include>
-      <uri>model://red_ring</uri>
+      <uri>model://ftc_red_ring</uri>
       <name>Red_Ring_3</name>
       <pose>2 .07 .45 1.57 0 0</pose>
     </include>
     <include>
-      <uri>model://red_ring</uri>
+      <uri>model://ftc_red_ring</uri>
       <name>Red_Ring_4</name>
       <pose>2 .105 .45 1.57 0 0</pose>
     </include>
     <include>
-      <uri>model://red_ring</uri>
+      <uri>model://ftc_red_ring</uri>
       <name>Red_Ring_5</name>
       <pose>2 .14 .45 1.57 0 0</pose>
     </include>
     <include>
-      <uri>model://red_ring</uri>
+      <uri>model://ftc_red_ring</uri>
       <name>Red_Ring_6</name>
       <pose>2 .175 .45 1.57 0 0</pose>
     </include>
     <include>
-      <uri>model://red_ring</uri>
+      <uri>model://ftc_red_ring</uri>
       <name>Red_Ring_7</name>
       <pose>1.62 0 .45 1.57 0 0</pose>
     </include>
     <include>
-      <uri>model://red_ring</uri>
+      <uri>model://ftc_red_ring</uri>
       <name>Red_Ring_8</name>
       <pose>1.62 .035 .45 1.57 0 0</pose>
     </include>
     <include>
-      <uri>model://red_ring</uri>
+      <uri>model://ftc_red_ring</uri>
       <name>Red_Ring_9</name>
       <pose>1.62 0.07 .45 1.57 0 0</pose>
     </include>
     <include>
-      <uri>model://red_ring</uri>
+      <uri>model://ftc_red_ring</uri>
       <name>Red_Ring_10</name>
       <pose>1.62 .105 .45 1.57 0 0</pose>
     </include>
     <include>
-      <uri>model://red_ring</uri>
+      <uri>model://ftc_red_ring</uri>
       <name>Red_Ring_11</name>
       <pose>1.62 .14 .45 1.57 0 0</pose>
     </include>
     <include>
-      <uri>model://red_ring</uri>
+      <uri>model://ftc_red_ring</uri>
       <name>Red_Ring_12</name>
       <pose>1.62 .175 .45 1.57 0 0</pose>
     </include>
 
     <!-- Blue Rings -->
     <include>
-      <uri>model://blue_ring</uri>
+      <uri>model://ftc_blue_ring</uri>
       <name>Blue_Ring_1</name>
       <pose>0 2 .45 0 1.57 0</pose>
     </include>
     <include>
-      <uri>model://blue_ring</uri>
+      <uri>model://ftc_blue_ring</uri>
       <name>Blue_Ring_2</name>
       <pose>.035 2 .45 0 1.57 0</pose>
     </include>
     <include>
-      <uri>model://blue_ring</uri>
+      <uri>model://ftc_blue_ring</uri>
       <name>Blue_Ring_3</name>
       <pose>.07 2 .45 0 1.57 0</pose>
     </include>
     <include>
-      <uri>model://blue_ring</uri>
+      <uri>model://ftc_blue_ring</uri>
       <name>Blue_Ring_4</name>
       <pose>.105 2 .45 0 1.57 0</pose>
     </include>
     <include>
-      <uri>model://blue_ring</uri>
+      <uri>model://ftc_blue_ring</uri>
       <name>Blue_Ring_5</name>
       <pose>.14 2 .45 0 1.57 0</pose>
     </include>
     <include>
-      <uri>model://blue_ring</uri>
+      <uri>model://ftc_blue_ring</uri>
       <name>Blue_Ring_6</name>
       <pose>.175 2 .45 0 1.57 0</pose>
     </include>
     <include>
-      <uri>model://blue_ring</uri>
+      <uri>model://ftc_blue_ring</uri>
       <name>Blue_Ring_7</name>
       <pose>0 1.65 .45 0 1.57 0</pose>
     </include>
     <include>
-      <uri>model://blue_ring</uri>
+      <uri>model://ftc_blue_ring</uri>
       <name>Blue_Ring_8</name>
       <pose>.035 1.65 .45 0 1.57 0</pose>
     </include>
     <include>
-      <uri>model://blue_ring</uri>
+      <uri>model://ftc_blue_ring</uri>
       <name>Blue_Ring_9</name>
       <pose>0.07 1.65 .45 0 1.57 0</pose>
     </include>
     <include>
-      <uri>model://blue_ring</uri>
+      <uri>model://ftc_blue_ring</uri>
       <name>Blue_Ring_10</name>
       <pose>.105 1.65 .45 0 1.57 0</pose>
     </include>
     <include>
-      <uri>model://blue_ring</uri>
+      <uri>model://ftc_blue_ring</uri>
       <name>Blue_Ring_11</name>
       <pose>.14 1.65 .45 0 1.57 0</pose>
     </include>
     <include>
-      <uri>model://blue_ring</uri>
+      <uri>model://ftc_blue_ring</uri>
       <name>Blue_Ring_12</name>
       <pose>.175 1.65 .45 0 1.57 0</pose>
     </include>
 
     <!-- Robot -->
     <include>
-      <uri>model://FTC_Robot</uri>
+      <uri>model://ftc_robot</uri>
       <pose>3.3 .3 0 0 0 1.57</pose>
     </include>
 
     <include>
-      <uri>model://FTC_Robot2</uri>
+      <uri>model://ftc_robot2</uri>
       <pose>.3 3 0 0 0 -1.57</pose>
     </include>
   </world>

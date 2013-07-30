@@ -1,5 +1,5 @@
 <package>
-  <description brief="vrc_finals">
+  <description brief="ftcsim_utils">
     FIRST simulation launch files and scripts 
   </description>
   <author>Justin Manzo</author>
@@ -7,4 +7,10 @@
 
   <license>BSD</license>
   <review status="unreviewed" notes=""/>
+
+  <depend package="roscpp"/>
+  <depend package="std_msgs"/>
+  <depend package="sensor_msgs"/>
+  <depend package="image_transport"/>
+
 </package>

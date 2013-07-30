@@ -4,6 +4,6 @@
   <arg name="gzworld" default="ftc_2013.world"/>
 
   <!-- start gazebo -->
-  <node name="gazebo" pkg="first_utils" type="run_gazebo" args="$(arg gzworld)" output="log"/>
+  <node name="gazebo" pkg="ftcsim_utils" type="run_gazebo" args="$(arg gzworld)" output="log"/>
 
 </launch>
