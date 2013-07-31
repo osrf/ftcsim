@@ -384,7 +384,7 @@
     </joint>
 
     <plugin name="FTC_drive" filename="libFTC.so">
-      <joy_topic>/ftc_robot/joy</joy_topic>
+      <joy_topic>/ftc_robot2/joy</joy_topic>
     </plugin>
   </model>
 </sdf>
