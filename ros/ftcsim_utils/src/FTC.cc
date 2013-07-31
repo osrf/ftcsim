@@ -65,7 +65,7 @@ void FTC::Load(physics::ModelPtr _model, sdf::ElementPtr _sdf)
   // Create the ROS Node in the system.
   this->rosNode = new ros::NodeHandle(this->model->GetScopedName());
 
-  std::string joyTopic = "/ftc/ocu/joy";
+  std::string joyTopic = "/ftc_robot/joy";
   if (_sdf->HasElement("joy_topic"))
     joyTopic = _sdf->Get<std::string>("joy_topic");
 

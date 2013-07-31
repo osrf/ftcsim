@@ -63,7 +63,7 @@ void CameraPlugin::Load(sensors::SensorPtr _sensor, sdf::ElementPtr _sdf)
   // Initialize the internal ROS publishers
   this->imageTransport = new image_transport::ImageTransport(*this->rosNode);
 
-  this->imagePub = this->imageTransport->advertise("Video", 1);
+  this->imagePub = this->imageTransport->advertise("video", 1);
 
   // Connect to the world update event.
   this->updateConn = this->camera->ConnectUpdated(

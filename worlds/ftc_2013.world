@@ -2,6 +2,26 @@
 <sdf version='1.4'>
   <world name='default'>
 
+    <physics type="ode">
+      <gravity>0 0 -9.81</gravity>
+      <real_time_update_rate>250</real_time_update_rate>
+      <max_step_size>0.004</max_step_size>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>20</iters>
+          <sor>1.0</sor>
+        </solver>
+        <constraints>
+          <cfm>0.0</cfm>
+          <erp>0.2</erp>
+          <contact_max_correcting_vel>100.0</contact_max_correcting_vel>
+          <contact_surface_layer>0.0</contact_surface_layer>
+        </constraints>
+      </ode>
+    </physics>
+
+
     <!-- Global light source -->
     <include>
       <uri>model://sun</uri>
@@ -21,32 +41,32 @@
     <include>
       <uri>model://ftc_red_ring</uri>
       <name>Red_Ring_1</name>
-      <pose>2 0 .45 1.57 0 0</pose>
+      <pose>1.97 0 .45 1.57 0 0</pose>
     </include>
     <include>
       <uri>model://ftc_red_ring</uri>
       <name>Red_Ring_2</name>
-      <pose>2 .035 .45 1.57 0 0</pose>
+      <pose>1.97 .035 .45 1.57 0 0</pose>
     </include>
     <include>
       <uri>model://ftc_red_ring</uri>
       <name>Red_Ring_3</name>
-      <pose>2 .07 .45 1.57 0 0</pose>
+      <pose>1.97 .07 .45 1.57 0 0</pose>
     </include>
     <include>
       <uri>model://ftc_red_ring</uri>
       <name>Red_Ring_4</name>
-      <pose>2 .105 .45 1.57 0 0</pose>
+      <pose>1.97 .105 .45 1.57 0 0</pose>
     </include>
     <include>
       <uri>model://ftc_red_ring</uri>
       <name>Red_Ring_5</name>
-      <pose>2 .14 .45 1.57 0 0</pose>
+      <pose>1.97 .14 .45 1.57 0 0</pose>
     </include>
     <include>
       <uri>model://ftc_red_ring</uri>
       <name>Red_Ring_6</name>
-      <pose>2 .175 .45 1.57 0 0</pose>
+      <pose>1.97 .175 .45 1.57 0 0</pose>
     </include>
     <include>
       <uri>model://ftc_red_ring</uri>
@@ -83,32 +103,32 @@
     <include>
       <uri>model://ftc_blue_ring</uri>
       <name>Blue_Ring_1</name>
-      <pose>0 2 .45 0 1.57 0</pose>
+      <pose>0 1.97 .45 0 1.57 0</pose>
     </include>
     <include>
       <uri>model://ftc_blue_ring</uri>
       <name>Blue_Ring_2</name>
-      <pose>.035 2 .45 0 1.57 0</pose>
+      <pose>.035 1.97 .45 0 1.57 0</pose>
     </include>
     <include>
       <uri>model://ftc_blue_ring</uri>
       <name>Blue_Ring_3</name>
-      <pose>.07 2 .45 0 1.57 0</pose>
+      <pose>.07 1.97 .45 0 1.57 0</pose>
     </include>
     <include>
       <uri>model://ftc_blue_ring</uri>
       <name>Blue_Ring_4</name>
-      <pose>.105 2 .45 0 1.57 0</pose>
+      <pose>.105 1.97 .45 0 1.57 0</pose>
     </include>
     <include>
       <uri>model://ftc_blue_ring</uri>
       <name>Blue_Ring_5</name>
-      <pose>.14 2 .45 0 1.57 0</pose>
+      <pose>.14 1.97 .45 0 1.57 0</pose>
     </include>
     <include>
       <uri>model://ftc_blue_ring</uri>
       <name>Blue_Ring_6</name>
-      <pose>.175 2 .45 0 1.57 0</pose>
+      <pose>.175 1.97 .45 0 1.57 0</pose>
     </include>
     <include>
       <uri>model://ftc_blue_ring</uri>

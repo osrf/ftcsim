@@ -6,4 +6,22 @@
   <!-- start gazebo -->
   <node name="gazebo" pkg="ftcsim_utils" type="run_gazebo" args="$(arg gzworld)" output="log"/>
 
+  <group ns="OCU">
+    <param name="joystick/dev" value="/dev/input/js0"/>
+    <node pkg="joy" type="joy_node" name="joystick">
+      <remap from="joy" to="/ftc_robot/joy"/>
+    </node>
+
+    <node name="camera1" pkg="image_view" type="image_view" args="image:=/ftc_robot/webcam/video"/>
+  </group>
+
+  <group ns="OCU2">
+    <param name="joystick/dev" value="/dev/input/js1"/>
+    <node pkg="joy" type="joy_node" name="joystick">
+      <remap from="joy" to="/ftc_robot2/joy"/>
+    </node>
+
+    <node name="camera2" pkg="image_view" type="image_view" args="image:=/ftc_robot2/webcam/video"/>
+  </group>
+
 </launch>
